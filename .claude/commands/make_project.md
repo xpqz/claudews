@@ -10,6 +10,12 @@ Add development dependencies:
 
 Initialize a git repository in the current directory
 
+Add a pre-commit hook that:
+
+* Runs `black`
+* Runs `ruff`
+* Runs the test suite
+
 Add standard files:
 
 * Create a LICENSE file containing the MIT license text. Use the standard template with [year] and [fullname] as placeholders.

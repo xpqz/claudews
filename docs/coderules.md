@@ -6,7 +6,7 @@
 - **ABSOLUTELY NO CONDITIONAL IMPORTS ANYWHERE** - ALL imports must be at file top, including in tests
 
 ## Test Locations
-- **CRITICAL**: Unit tests MUST be placed in `tests/unit/`
+- **CRITICAL**: Unit tests MUST be placed in `tests/`
 - Test files should be named `test_*.py`
 - Scenario tests go in `tests/scenarios/`
 
@@ -38,8 +38,8 @@
     - Review any skipped, xfailed and xpassed tests.
     - Fix any pytest warnings.
 - Maintain progress in docs/TODO-X.md files
-- Don't use /tmp and other locations outside the current repository
-- If you create temporary scripts for debugging, remove them after use.
+- Don't use /tmp and other locations outside the current repository: use the tmp/ directory in the repository dir instead, provided for this purpose
+- If you create temporary scripts for debugging, remove them after use, and ensure not committed to git
 
 ## GitHub Workflow
 

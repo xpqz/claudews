@@ -53,9 +53,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 dyalog-docs/           <-- DOCUMENTATION SOURCE; NEVER MODIFY!
 link-checker/          <-- Python source code
 docker/                <-- Docker stuff 
-tests/
-  unit/                <-- Unit tests go here (pytest)
-  scenarios/           <-- Scenario tests go here
+tests/                 <-- Unit tests go here (pytest)
 docs/                  <-- Project plans, TODOs, reports...
 ```
 
@@ -68,8 +66,7 @@ docs/                  <-- Project plans, TODOs, reports...
 
 ### Testing
 - Test files should be named `test_*.py`
-- Unit tests go in: `tests/unit/`
-- Integration/scenario tests go in: `tests/scenarios/`
+- Unit tests go in: `tests/`
 
 For ad-hoc testing, don't write to temporary locations, like `/tmp`, but instead write your scripts to `tmp/` in the project directory. These should never be committed.
 
@@ -79,13 +76,13 @@ For ad-hoc testing, don't write to temporary locations, like `/tmp`, but instead
 uv run pytest
 
 # Run specific test file
-uv run pytest tests/unit/test_unify.py
+uv run pytest tests/test_extractor_regex.py
 
 # Run with verbose output
 uv run pytest -v
 
 # Run specific test function
-uv run pytest tests/unit/test_unify.py::test_occurs_check
+uv run pytest tests/test_extractor_regex.py::test_internal_page_anchor
 ```
 
 ### Code Formatting
