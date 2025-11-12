@@ -14,5 +14,5 @@ Execute the following commands:
 
 ```
 /rules
-/make_project link_checker
+/make_project link_check
 ```

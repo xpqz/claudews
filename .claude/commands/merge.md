@@ -1,1 +1,1 @@
-Instruct the git-github-operator to merge this GitHub PR, cleaning up local and remote branches. In doing so, it should also close relevant issues, maintaining issue tick boxes. Don't wait for CI.
+Instruct the git-github-operator to merge this GitHub PR, and wait for CI to complete. If successful, clean up local and remote branches. In doing so, also close relevant issues, maintaining issue tick boxes. Update the docs/PLAN.md and docs/TODO.md if relevant.

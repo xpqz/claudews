@@ -27,6 +27,7 @@ Set up a new Python project in the current directory with the following requirem
       """Dummy test that always passes."""
       assert True
   ```
+* Create a new folder `docker/` in the root of the repository. Ensure it's committed to git later.
 
 ## Git setup
 
@@ -57,7 +58,7 @@ Set up a new Python project in the current directory with the following requirem
 ## Standard files
 
 * Create `LICENSE` file with MIT licence template using [year] and [fullname] as placeholders
-* Create `README.md` with sections: Project Title (use $ARGUMENTS as title), Description (placeholder), Installation (with git clone and uv sync commands), Usage (placeholder), Testing (show pytest, black, ruff commands), License (reference to MIT)
+* Create `README.md` with sections: Project Title (use $ARGUMENTS as title), Description (placeholder), Installation (with git clone and uv sync commands), Usage (placeholder), Testing (show pytest, black, ruff commands), License (reference to MIT). Ensure that the README.md file shows badges for test status, coverage etc.
 
 ## CI setup
 
@@ -66,7 +67,7 @@ Set up a new Python project in the current directory with the following requirem
   * Uses ubuntu-latest runner
   * Checks out code
   * Installs uv using `astral-sh/setup-uv@v5` with cache enabled
-  * Installs Python 3.11 with `uv python install 3.11`
+  * Installs Python 3.12 with `uv python install 3.12`
   * Installs dependencies with `uv sync`
   * Runs tests with `uv run pytest`
 
@@ -88,6 +89,7 @@ Set up a new Python project in the current directory with the following requirem
 * Commit with message 'initial commit' (exactly, no variations)
 * If commit fails due to pre-commit hook issues (formatting/linting), fix them and retry
 * Create GitHub repository: `gh repo create $ARGUMENTS --public --source=. --remote=origin`
+* Create a label 'epic'
 * Push to remote: `git push -u origin main`
 * Verify CI runs and passes: `sleep 5 && gh run list --limit 1` then `gh run view {run_id}` to confirm success
 
