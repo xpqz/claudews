@@ -1,5 +1,9 @@
 # Claude Code Workshop Instructions
 
+For pre-requisites, see [docs/PREREQS.md](docs/PREREQS.md).
+
+> **Note:** This contains a lot of pre-approved commands, which in general is a bad idea. Review carefully: [.claude/settings.local.json](.claude/settings.local.json)
+
 Clone this repository, and remove its `.git` folder:
 
 ```
