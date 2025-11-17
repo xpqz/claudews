@@ -43,7 +43,7 @@ Click the Claude logo to open, then: /login -- select claude.ai account, not API
 **uv**
 
 ```
-winget install --id Astral.Uv -e
+winget install --id=astral-sh.uv -e
 ```
     
 **Python**
