@@ -15,7 +15,7 @@ rm -rf .git
 
 Open the cloned repository in VS Code, select a file, and start the Claude Code extension by clicking the little brown "splash" in the tab bar.
 
-Execute the following commands to set up the project's initial state:
+After reviewing carefully, execute the following commands to set up the project's initial state:
 
 ```
 /rules
